@@ -1,6 +1,6 @@
 #Variables
 param(
-    [string] $exportPath = "C:\temp\PSExport\${Env:ComputerName}",
+    [string] $exportPath = "C:\temp\PSExport\${Env:ComputerName}\$(get-date -f yyyy-MM-dd)",
     [int] $daysInactive = 61
 )
 Import-Module ActiveDirectory
